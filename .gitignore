@@ -1,0 +1,9 @@
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore C# project files
+*.csproj
+
+# Ignore other Visual Studio files
+.vs/
