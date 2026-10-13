@@ -71,7 +71,7 @@ static async Task RunAndTimeIt(string name, Func<CancellationToken, Task> work, 
     }
     catch (OperationCanceledException)
     {
-        // The alarm rang before the work was done, so we land here.
+        
         stopwatch.Stop();
         Console.WriteLine($"{name} was CANCELLED after {stopwatch.ElapsedMilliseconds} ms\n");
     }
